@@ -19,7 +19,7 @@ constructor(prop){
 		bulbbreak : prop.txtbulbbreak,
 	};
 
-	console.log("constructor");
+	//console.log("constructor");
 
 	this.bulb_off = this.bulb_off.bind(this);
     this.bulb_on = this.bulb_on.bind(this);
