@@ -55,14 +55,6 @@ onBlubbreak(value) {
     	<div>
     	 <h2>Image Gallery</h2>
 		<div className="row">
-		<div className="col-md-4">
-		  <div className="thumbnail">
-
-		  		{<Compdbulb txtbulbOn={this.state.bulbOn} txtbulboff={this.state.bulboff} txtbulbbreak={this.state.bulbbreak} />}
-		    	
-		  </div>
-		</div>
-
 
 		<div className="col-md-2">
 		  <div className="thumbnail">
@@ -75,6 +67,11 @@ onBlubbreak(value) {
 
 
 
+		
+
+
+
+
 <div className="col-md-2">
 		  <div className="thumbnail">
 		  {bulbbreak && <Compbtbreak blubbreakkare={this.onBlubbreak} />}	 
@@ -82,6 +79,14 @@ onBlubbreak(value) {
 		  </div>
 		</div>
 
+
+		<div className="col-md-4">
+		  <div className="thumbnail">
+
+		  		{<Compdbulb txtbulbOn={this.state.bulbOn} txtbulboff={this.state.bulboff} txtbulbbreak={this.state.bulbbreak} />}
+		    	
+		  </div>
+		</div>
 
 		</div>
 
