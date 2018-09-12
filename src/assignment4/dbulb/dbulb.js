@@ -56,6 +56,15 @@ bulb_break(){
 }
 
 
+bulb_break1(){
+
+	return (<div><img src={imgbreak} alt="Its break" height="400" width="200"/>;
+		<div className="caption">
+		        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+		      </div></div>
+	);
+}
+
 
 
 render() {

@@ -16,6 +16,11 @@ onBlub_on() {
 
   }
 
+  onBlub_on1() {
+      this.props.blubonkare({bulbOn: false, bulboff: true})
+
+  }
+
 render() {
     return (
     	<div><img src={imgbtnon} onClick={this.onBlub_on} alt="Light OFF" height="200" width="100"/>

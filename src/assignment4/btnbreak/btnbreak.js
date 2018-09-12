@@ -16,7 +16,9 @@ onBlub_break() {
       this.props.blubbreakkare({bulbbreak: false})
   }
 
-
+onBlub_break2() {
+      this.props.blubbreakkare({bulbbreak: false})
+  }
 render() {
 	
 

@@ -18,6 +18,11 @@ onBlub_off() {
 
   }
 
+onBlub_off1() {
+      this.props.bluboffkare({bulbOn: true, bulboff: false})
+
+  }
+
 render() {
 	
 
