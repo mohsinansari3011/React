@@ -13,12 +13,10 @@ constructor(props) {
   }
 
 onBlub_break() {
-      this.props.blubbreakkare({bulbbreak: false})
+      this.props.blubbreakkare({bulbOn: false, bulboff: false, bulbbreak:true})
   }
 
-onBlub_break2() {
-      this.props.blubbreakkare({bulbbreak: false})
-  }
+
 render() {
 	
 

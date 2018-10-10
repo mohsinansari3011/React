@@ -12,12 +12,7 @@ class btnon extends Component {
   }
 
 onBlub_on() {
-      this.props.blubonkare({bulbOn: false, bulboff: true})
-
-  }
-
-  onBlub_on1() {
-      this.props.blubonkare({bulbOn: false, bulboff: true})
+      this.props.blubonkare({bulbOn: false, bulboff: true, bulbbreak:false})
 
   }
 

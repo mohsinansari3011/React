@@ -4,7 +4,7 @@ import './App.css';
 // import Comptk2 from './tsk2/tsk2';
 // import Comptk3 from './tsk3/tsk3';
 // import Comptk4 from './tsk4/tsk4';
-//import Comptk5 from './tsk5/tsk5';
+import Comptk5 from './tsk5/tsk5';
 import Compdbulb from './assignment4/dbulb/dbulb';
 import Compbton from './assignment4/btnon/btnon';
 import Compbtoff from './assignment4/btnoff/btnoff';
@@ -20,8 +20,11 @@ constructor(prop){
 
 	this.state = {
 
-		bulbOn : true,
-		bulboff : false,
+		project3 :true,
+		project4 :false,
+
+		bulbOn : false,
+		bulboff : true,
 		bulbbreak : true,
 	};
 
@@ -33,19 +36,19 @@ constructor(prop){
 
 
 onBlub(value) {
-    console.log('onBlubButton Click ==>?', value.bulbOn);
-    this.setState({bulbOn: value.bulbOn,bulboff: value.bulboff});
+    //console.log('onBlubButton Click ==>?', value.bulbOn);
+    this.setState({bulbOn: value.bulbOn,bulboff: value.bulboff , bulbbreak: value.bulbbreak});
   }
 onBlubbreak(value) {
-    console.log('onBlubbreak ==>?', value.bulbbreak);
-    this.setState({bulbbreak: value.bulbbreak});
+    //console.log('onBlubbreak ==>?', value.bulbbreak);
+    this.setState({bulbOn: value.bulbOn,bulboff: value.bulboff , bulbbreak: value.bulbbreak});
   }
 
 
 
   render() {
 
-  	const {bulbOn , bulboff , bulbbreak} = this.state;
+  	const {bulbOn , bulboff , bulbbreak, project3, project4} = this.state;
 // console.log('state == >', this.state);
 // console.log('bulbOn == >', this.state.bulbOn);
 
@@ -53,6 +56,9 @@ onBlubbreak(value) {
     return (
 
     	<div>
+
+    	{!project3 && <Comptk5 />}
+
     	 <h2>Image Gallery</h2>
 		<div className="row">
 		<div className="col-md-4">
@@ -77,7 +83,7 @@ onBlubbreak(value) {
 
 <div className="col-md-2">
 		  <div className="thumbnail">
-		  {bulbbreak && <Compbtbreak blubbreakkare={this.onBlubbreak} />}	 
+		  {<Compbtbreak blubbreakkare={this.onBlubbreak} />}	 
 		     	 
 		  </div>
 		</div>

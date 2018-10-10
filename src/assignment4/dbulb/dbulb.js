@@ -19,7 +19,7 @@ constructor(prop){
 		bulbbreak : prop.txtbulbbreak,
 	};
 
-	//console.log("constructor");
+	console.log("constructor");
 
 	this.bulb_off = this.bulb_off.bind(this);
     this.bulb_on = this.bulb_on.bind(this);
@@ -27,7 +27,21 @@ constructor(prop){
   
 }
 
+componentWillUpdate(nextProps, nextState) {
 
+
+	console.log(nextProps , "nextProps");
+	console.log(nextState , "nextState");
+}
+
+
+componentWillReceiveProps(nextProps) {
+    this.setState({
+      bulbOn : nextProps.txtbulbOn,
+		bulboff : nextProps.txtbulboff,
+		bulbbreak : nextProps.txtbulbbreak,
+    })
+}
 
 
 bulb_off(){
@@ -55,15 +69,6 @@ bulb_break(){
 	);
 }
 
-
-bulb_break1(){
-
-	return (<div><img src={imgbreak} alt="Its break" height="400" width="200"/>;
-		<div className="caption">
-		        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-		      </div></div>
-	);
-}
 
 
 

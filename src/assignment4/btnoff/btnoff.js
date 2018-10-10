@@ -14,12 +14,7 @@ class btnoff extends Component {
   }
 
 onBlub_off() {
-      this.props.bluboffkare({bulbOn: true, bulboff: false})
-
-  }
-
-onBlub_off1() {
-      this.props.bluboffkare({bulbOn: true, bulboff: false})
+      this.props.bluboffkare({bulbOn: true, bulboff: false , bulbbreak:false})
 
   }
 
